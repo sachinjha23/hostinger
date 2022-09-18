@@ -51,9 +51,6 @@
     .nav-items{
         display: none;
     }
-    /* .nav-logo{
-        display: none;
-    } */
     .nav-sign{
         display: none;
     }
@@ -124,8 +121,6 @@
         width: 100%;
     }
     .card-text a{
-        /* width: 100%; */
-        /* align-items: center; */
         text-align: center;
     }
     .testimonial-upper-card{
@@ -308,7 +303,6 @@
     }
     .home-left img , .home-right img{
         width: 170px;
-        /* top: -5%; */
     }
     .search-section p {
         font-size: 12px;
