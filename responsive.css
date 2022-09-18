@@ -1,0 +1,321 @@
+@media(max-width:1150px){
+    .nav-items ul{
+        gap: 1.5rem;
+    }
+    .nav-sign{
+        gap: 1.5rem;
+    }
+    .nav-logo{
+        padding: 0 0;
+    }
+}
+@media(max-width:1050px){
+    html{
+        font-size: 90%;
+    }
+    .price-box{
+        width: 800px;
+    }
+    .price-box p{
+        font-size: 13px;
+    }
+    .card video{
+        width: 350px;
+    }
+    .card-text p{
+        max-width: 400px;
+    }
+  
+}
+@media(max-width:950px){
+    .nav-logo img{
+        width: 150px;
+    }
+    .active-nav .nav-logo img{
+        width: 150px;
+    }
+    html{
+        font-size: 85%;
+    }
+}
+@media(max-width:900px){
+    .hamburger-icon{
+        font-size: 2.5rem;
+    }
+    nav{
+        justify-content: left;
+        gap: 2rem;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    .nav-items{
+        display: none;
+    }
+    /* .nav-logo{
+        display: none;
+    } */
+    .nav-sign{
+        display: none;
+    }
+    .home-left img,.home-right img{
+        width: 300px;
+    }
+    .price-box{
+        width: 700px;
+    }
+    .search-section p{
+        max-width: 600px;
+    }
+}
+@media(max-width:800px){
+    html{
+        font-size: 82%;
+    }
+    .card-text p{
+        width: 300px;
+        font-size: 12px;
+    }
+    .card video{
+        width: 350px;
+    }
+    .card-text h2{
+        font-size: 2rem;
+    }
+    .price-box{
+        width: 600px;
+        font-size: 12px;
+    }
+    .price-upper-center h1{
+        font-size: 2.5rem;
+    }
+    .price-upper-center p{
+        width: 150px;
+        text-align: center;
+    }
+    .service-item h5{
+        font-size: 1rem;
+    }
+}
+@media(max-width:700px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .reverse-the-card{
+        flex-direction: column-reverse;
+    }
+    .card video{
+        width: 500px;
+    }
+    .card h2{
+        text-align: center;
+    }
+    .card-text p{
+        width: 600px;
+        text-align: center;
+    }
+    .card-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .card-text a{
+        /* width: 100%; */
+        /* align-items: center; */
+        text-align: center;
+    }
+    .testimonial-upper-card{
+        flex-direction: column;
+    }
+    .testimonial-lower-card{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:650px){
+    .price-box{
+        width: 500px;
+    }
+    .price-section p{
+        font-size: 10px;
+    }
+    .price-upper-center h1{
+        font-size: 2rem;
+    }
+    .price-upper-center .btn-solid{
+        padding: 0.3rem 2.5rem;
+    }
+    .home-left img,.home-right img{
+        width: 200px;
+    }
+    .money-back p{
+        width: 450px;
+        text-align: center;
+    }
+    .money-back .btn-solid{
+        width: 250px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    
+}
+@media(max-width:600px){
+    .card video{
+        width: 310px;
+    }
+    .company-name{
+        gap: 2rem;
+    }
+    .company-name img{
+        width: 120px;
+    }
+    .home-section h1{
+        font-size: 4rem;
+    }
+    .home-section h3,.home-section p{
+        max-width: 300px;
+        text-align: center;
+    }
+    .home-section h3{
+        font-size: 1.5rem;
+    }
+    .service-item h5{
+        font-size: 0.7rem;
+    }
+    .price-section-para{
+        width: 400px;
+    }
+    .search-section p {
+        font-size: 12px;
+        width: 450px;
+    }
+}
+
+@media(max-width:550px){
+    .price-upper-section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .price-upper-center h1{
+        font-size: 4rem;
+    }
+    .price-upper-center p{
+        width: 300px;
+        font-size: 16px;
+    }
+    .price-upper-center .btn-solid{
+        padding: 0.5rem 4rem;
+    }
+    .price-upper-section .price-upper-left,.price-upper-section .price-upper-right{
+        display: none;
+    }
+    .price-middle-items{
+        flex-direction: column;
+        font-size: 20px;
+    }
+    .price-middle-items p{
+        font-size: 20px;
+    }
+    .price-middle-items .price-upper-left,.price-middle-items .price-upper-right{
+        border: none;
+    }
+    .service-section-items{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .service-item h5{
+        font-size: 1.2rem;
+    }
+    .price-box{
+        width: 400px;
+    }
+}
+@media(max-width:500px){
+    .service-section-items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .service-item h5{
+        font-size: 1.4rem;
+    }
+    .service-item-img{
+        font-size: 1.4rem;
+    }
+    .money-back h3{
+        width: 300px;
+        text-align: center;
+    }
+    .money-back p{
+        width: 300px;
+    }
+    .price-section-para{
+        width: 400px;
+    }
+    .search-section p {
+        font-size: 12px;
+        width: 400px;
+    }
+}
+@media(max-width:450px){
+    .company-name{
+        gap: 1rem;
+    }
+    .company-name img{
+        width: 90px;
+    }
+    .price-box{
+        width: 350px;
+    }
+    .service-item h5{
+        font-size: 1.2rem;
+    }
+    .card-text p{
+        max-width: 300px;
+    }
+    .price-section-para{
+        width: 350px;
+    }
+    .search-section p {
+        font-size: 12px;
+        width: 350px;
+    }
+    .search-section h3{
+        font-size: 1.6rem;
+    }
+    .home-section h1{
+        font-size: 3.5rem;
+    }
+    .home-section h1 sup,.home-section h1 sub{
+        font-size: 20px;
+    }
+}
+@media(max-width:400px){
+    .price-box{
+        width: 300px;
+    }
+    .price-middle-items p{
+        font-size: 14px;
+    }
+    .price-section-para{
+        width: 300px;
+    }
+    .home-left{
+        width: 100px;
+    }
+    .home-left img , .home-right img{
+        width: 170px;
+        /* top: -5%; */
+    }
+    .search-section p {
+        font-size: 12px;
+        width: 300px;
+    }
+    .search-section h3{
+        font-size: 1.2rem;
+    }
+
+}

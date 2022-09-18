@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: center;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    max-width: 1600px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+button,a{
+    cursor: pointer;
+}
+.check-icon{
+    color: rgb(1, 193, 1);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.icon{
+    filter: invert(100%);
+}
+h1{
+    font-size: 3.4rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.4rem;
+}
+h5{
+    font-size: 1.2rem;
+}
+.btn-solid{
+    padding: 0.7rem 4rem;
+    color: white;
+    background-color: red;
+    border-radius: 30px;
+    border: none;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~HAMBURGER MENU SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.hamburger-menu{
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background-color: #efecfa;
+    z-index: 99999;
+    display: none;
+    /* justify-content: center; */
+    flex-direction: column;
+    transition: display 0.5s linear;
+    gap: 2rem;
+    /* align-items:center; */
+    padding: 3rem 3rem;
+}
+
+.exit-menu{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    font-size: 3rem;
+    color: red;
+}
+.hamburger-logo{
+    display: flex;
+    justify-content: center;
+}
+.hamburger-logo img{
+    width: 280px;
+}
+.hamburger-items{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.4rem;
+}
+.hamburger-items .sign-up{
+    border: 1px solid #673de6;
+}
+.hamburger-sign{
+    color: black;
+    /* border: 1px solid black; */
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.hamburger-icon{
+    font-size: 0rem;
+}
+nav{
+    width: 100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 1rem;
+    background-color: transparent;
+    position: fixed;
+    top: 0%;
+    z-index: 10000;
+    color: white;
+    max-width: 1600px;
+    /* border: 1px solid white; */
+    /* background-color: red; */
+}
+.nav-items ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+}
+.nav-logo{
+    padding: 0 2rem;
+}
+.nav-logo img{
+    width: 200px;
+    filter: invert(100%);
+}
+.btn-a{
+    padding: 0.3rem 1.4rem;
+}
+.sign-up{
+    border: 1px solid white;
+    border-radius: 30px;
+}
+.nav-sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.active-nav{
+    background-color: white;
+    color: black;
+    box-shadow: rgba(149, 157, 165, 0.61) 0px 4px 4px;
+
+}
+.active-nav .nav-items ul li a{
+    color: black;
+}
+.active-nav .nav-logo img{
+    width: 200px;
+    filter: invert(0%);
+}
+.active-nav .sign-up{
+    border: 1px solid rgb(9, 2, 2);
+    border-radius: 30px;
+}
+.active-nav .nav-sign{
+    color: black;
+}
+.active-nav .btn-a{
+    color: black;
+}
+.nav-items ul li{
+    position: relative;
+}
+.domain,.vps{
+    position: relative;
+}
+.domain-mega-menu,.email-mega-menu,.vps-mega-menu , .hosting-mega-menu{
+    top: 6vh;
+    left: -100px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 2rem;
+    background-color: white;
+    color: black;
+    width: 400px;
+}
+.nav-subitem-img{
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: #673de6;
+}
+.domain-items,.email-items,.vps-items,.hosting-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+.domain-text,.email-text,.vps-text, .hosting-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~HOME SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.landing-section{
+    width: 100%;
+    background-color: #673de6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+.home-image{
+    position: absolute;
+    top: -100%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.home-left img,.home-right img{
+    width: 400px;
+}
+
+.home-section{
+    width: 100%;
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: white;
+    position: relative;
+    z-index: 200;
+    /* border: 1px solid red; */
+}
+
+.home-section h1{
+    font-size: 5rem;
+}
+
+.home-section h3,.home-section p{
+    max-width: 500px;
+    text-align: center;
+}
+sup,sub{
+    font-size: 34px;
+}
+.count-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    padding-bottom: 1rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+.container p{
+    font-size: 12px;
+}
+.box{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.box p{
+    font-size: 20px;
+}
+.home-section .btn-solid{
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+}
+.home-section .btn-solid p{
+    position: relative;
+    z-index: 100;
+}
+.home-section .btn-solid::after{
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 99%;
+    /* background-color: #e63d3d; */
+    background-color: rgb(0, 187, 255);
+
+    animation: wave 3s linear infinite;
+}
+
+@keyframes wave{
+    0%,100%{
+      
+        clip-path: polygon(0 8%, 7% 6%, 14% 5%, 21% 5%, 28% 6%, 34% 8%, 40% 12%, 46% 17%, 50% 20%, 54% 23%, 60% 25%, 66% 26%, 70% 26%, 77% 25%, 83% 23%, 89% 21%, 95% 19%, 100% 17%, 100% 100%, 0% 100%);
+    
+    }
+    50%{
+        
+        clip-path: polygon(0 15%, 9% 21%, 14% 23%, 18% 25%, 21% 26%, 30% 28%, 32% 28%, 40% 27%, 46% 26%, 52% 23%, 57% 19%, 62% 15%, 68% 11%, 73% 8%, 79% 6%, 86% 5%, 93% 5%, 100% 6%, 100% 100%, 0% 100%);
+    }
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~COMPANY SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.company-name{
+    display: flex;
+    /* max-width: 800px; */
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    gap: 4rem;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.company-name img{
+    width: 150px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~PRICE SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.price-section{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 01rem;
+    text-align: center;
+}
+.price-section p{
+    max-width: 600px;
+}
+.price-box{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: rgba(149, 157, 165, 0.61) 0px 8px 24px;
+    /* border: 0.5px solid black; */
+}
+.price-heading{
+    width: 100%;
+    padding: 0.4rem 2rem;
+    background-color: #673de6;
+    color: white;
+}
+.price-upper-section , .price-middle-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1.4rem 1rem;
+    text-align: left;
+}
+.price-upper-section span , .price-middle-items span{
+    font-weight: 900;
+}
+.price-upper-left , .price-middle-center{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+    flex-direction: column;
+    border-right: 2px solid #673de6;
+}
+.price-middle-center{
+    border: none;
+}
+.price-upper-left p{
+    text-align: left;
+}
+.price-upper-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+}
+.price-upper-center h1 sup,.price-upper-center h1 sub{
+    font-size: 14px;
+}
+.price-upper-center p{
+    font-weight: 900;
+}
+.price-upper-center .btn-solid{
+    margin-top: 1rem;
+    padding: 0.6rem 4.5rem;
+    background-color: #673de6;
+}
+.price-upper-right{
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 1rem;
+    flex-direction: column;
+    border-left: 2px solid #673de6;
+}
+.price-upper-right p{
+    text-align: left;
+}
+.check-icon{
+    color: green;
+}
+
+.price-middle-section{
+    padding: 1rem 1rem;
+    display: none;
+}
+.price-middle-items{
+    display: none;
+}
+.price-lower-section{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-top: 1px dotted black;
+}
+.hover-btn{
+    /* background-color: #e63d3d; */
+    background-color: rgb(0, 187, 255);
+
+    /* background-color: transparent; */
+    position: relative;
+    overflow: hidden;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SERVICE SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.service-section{
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.service-section h3{
+    text-align: center;
+    padding: 2rem 0;
+}
+.service-section-items{
+    /* width: 1000px; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1.5rem;
+    row-gap: 2.2rem;
+    padding: 0.3rem 2rem;
+}
+.service-item{
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    gap: 0.5rem;
+    text-align: left;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.service-item::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    height: 100%;
+    background-color: #673de6;
+    border-radius: 20px;
+    transition:  width 0.4s;
+}
+
+.service-item-img{
+    width: 1.9rem ;
+    height: 1.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #f3f0fd;
+    color: #673de6;
+    font-size: 14px;
+    position: relative;
+    z-index: 100;
+}
+.service-item h5{
+    position: relative;
+    z-index: 100;
+    max-width: 400px;
+}
+
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SEARCH SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.search-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 2rem;
+    gap: 1rem;
+    background-color: #efecfa;
+    
+}
+.search-section p{
+    max-width: 800px;
+    text-align: center;
+}
+.search-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    
+}
+input[type="text"]{
+    box-shadow: rgba(149, 157, 165, 0.61) 0px 8px 24px;
+    width: 0px;
+    border-radius: 10px;
+    padding: 0.45rem 0.9rem;
+    font-size: 18px;
+    border: none;
+    outline-style: none;
+    text-transform: capitalize;
+    /* border: 1px solid gray; */
+}
+input[type="text"]:focus{
+    border: 0.2px solid #673de6;
+}
+
+.search-btn{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    border-radius: 10px;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CARD SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3rem 2rem;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.card-text p{
+    max-width: 500px;
+}
+.card video{
+    width: 500px;
+}
+.card-btn{
+    position: relative;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    width: 150px;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.see-all-product{
+    width: 220px;
+}
+.card-btn::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 2%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.243);
+    transform: rotate(-30deg);
+
+}
+
+.card-btn::before{
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: -30%;
+    width: 30%;
+    height: 40%;
+    border-radius: 50%;
+    /* background-color: #673de6; */
+    background-color: rgb(0, 187, 255);
+
+
+}
+.card-btn:hover::before{
+    transition:  all 1s linear ;
+    transform: scale(15);
+}
+.card-btn p{
+    position: relative;
+}
+.card-btn:hover{
+    transition:  all 0.8s linear ;
+    color: white;
+    border: none;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~    TESTIMONIAL SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.testimonial{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem ;
+    gap: 2rem;
+}
+.testimonial-heading{
+    text-align: center;
+}
+.testimonial-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+.testimonial-upper-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.customer-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* border: 0.2px solid black; */
+    box-shadow: rgba(149, 157, 165, 0.61) 0px 4px 10px;
+    padding: 1rem 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.customer-card::after{
+    content: '';
+    position: absolute;
+    top: -25%;
+    left: -25%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    /* background-color: #673de6; */
+    background-color: rgb(0, 187, 255);
+}
+.customer-card::before{
+    content: '';
+    position: absolute;
+    bottom: -25%;
+    right: -25%;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(0, 187, 255);
+}
+.customer-card:hover::after,.customer-card:hover::before{
+    transition:  all 0.9s linear;
+    width: 400px;
+    height: 400px;
+    opacity: 0.15;
+}
+
+.customer-card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 100;
+}
+.customer-card p{
+    max-width: 200px;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    z-index: 100;
+}
+.testimonial-lower-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.lower-customer-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    /* border: 0.2px solid black; */
+    box-shadow: rgba(149, 157, 165, 0.61) 0px 4px 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.lower-customer-card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lower-customer-card-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.lower-customer-card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.lower-customer-card-text p{
+    max-width: 265px;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       MONEY BACK SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.money-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 3rem 2rem;
+}
+.money-back .btn-solid{
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+}
+.money-back .btn-solid p{
+    z-index: 100;
+    position: relative;
+}
+.money-back .btn-solid::after{
+    content: '';
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    height: 99%;
+    /* background-color: #e63d3d; */
+    background-color: rgb(0, 187, 255);
+
+    animation: wave 3s linear infinite;
+}
