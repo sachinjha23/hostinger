@@ -16,8 +16,6 @@ body{
     max-width: 1600px;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 button,a{
     cursor: pointer;
@@ -64,11 +62,9 @@ h5{
     background-color: #efecfa;
     z-index: 99999;
     display: none;
-    /* justify-content: center; */
     flex-direction: column;
     transition: display 0.5s linear;
     gap: 2rem;
-    /* align-items:center; */
     padding: 3rem 3rem;
 }
 
@@ -100,7 +96,6 @@ h5{
 }
 .hamburger-sign{
     color: black;
-    /* border: 1px solid black; */
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .hamburger-icon{
@@ -118,8 +113,6 @@ nav{
     z-index: 10000;
     color: white;
     max-width: 1600px;
-    /* border: 1px solid white; */
-    /* background-color: red; */
 }
 .nav-items ul{
     display: flex;
@@ -233,7 +226,6 @@ nav{
 
 .home-section{
     width: 100%;
-    /* width: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +234,6 @@ nav{
     color: white;
     position: relative;
     z-index: 200;
-    /* border: 1px solid red; */
 }
 
 .home-section h1{
@@ -304,7 +295,6 @@ sup,sub{
     left: 0%;
     width: 100%;
     height: 99%;
-    /* background-color: #e63d3d; */
     background-color: rgb(0, 187, 255);
 
     animation: wave 3s linear infinite;
@@ -325,10 +315,8 @@ sup,sub{
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~COMPANY SECTION~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 .company-name{
     display: flex;
-    /* max-width: 800px; */
     justify-content: center;
     align-items: center;
-    /* border: 1px solid red; */
     gap: 4rem;
     align-items: center;
     padding: 1rem 2rem;
@@ -361,7 +349,6 @@ sup,sub{
     border-radius: 8px;
     overflow: hidden;
     box-shadow: rgba(149, 157, 165, 0.61) 0px 8px 24px;
-    /* border: 0.5px solid black; */
 }
 .price-heading{
     width: 100%;
@@ -440,10 +427,7 @@ sup,sub{
     border-top: 1px dotted black;
 }
 .hover-btn{
-    /* background-color: #e63d3d; */
     background-color: rgb(0, 187, 255);
-
-    /* background-color: transparent; */
     position: relative;
     overflow: hidden;
 }
@@ -454,14 +438,12 @@ sup,sub{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
 }
 .service-section h3{
     text-align: center;
     padding: 2rem 0;
 }
 .service-section-items{
-    /* width: 1000px; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 1.5rem;
@@ -530,9 +512,7 @@ sup,sub{
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* width: 100%; */
-    
+    align-items: center;    
 }
 input[type="text"]{
     box-shadow: rgba(149, 157, 165, 0.61) 0px 8px 24px;
@@ -543,7 +523,6 @@ input[type="text"]{
     border: none;
     outline-style: none;
     text-transform: capitalize;
-    /* border: 1px solid gray; */
 }
 input[type="text"]:focus{
     border: 0.2px solid #673de6;
@@ -611,7 +590,6 @@ input[type="text"]:focus{
     width: 30%;
     height: 40%;
     border-radius: 50%;
-    /* background-color: #673de6; */
     background-color: rgb(0, 187, 255);
 
 
@@ -661,7 +639,6 @@ input[type="text"]:focus{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    /* border: 0.2px solid black; */
     box-shadow: rgba(149, 157, 165, 0.61) 0px 4px 10px;
     padding: 1rem 1rem;
     position: relative;
@@ -675,7 +652,6 @@ input[type="text"]:focus{
     border-radius: 50%;
     width: 100px;
     height: 100px;
-    /* background-color: #673de6; */
     background-color: rgb(0, 187, 255);
 }
 .customer-card::before{
@@ -722,7 +698,6 @@ input[type="text"]:focus{
     align-items: center;
     gap: 1rem;
     padding: 1rem 1rem;
-    /* border: 0.2px solid black; */
     box-shadow: rgba(149, 157, 165, 0.61) 0px 4px 10px;
     position: relative;
     overflow: hidden;
@@ -778,7 +753,6 @@ input[type="text"]:focus{
     left: 0%;
     width: 100%;
     height: 99%;
-    /* background-color: #e63d3d; */
     background-color: rgb(0, 187, 255);
 
     animation: wave 3s linear infinite;
